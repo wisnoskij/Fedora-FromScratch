@@ -1,0 +1,15 @@
+#permissive mode
+sudo setenforce Permissive
+#Enforcing
+sudo setenforce Enforcing
+
+#Create and enable policy
+audit2allow -w -a
+audit2allow -a
+audit2allow -a -M mypolicy
+
+semodule -i mypolicy.pp
+
+
+#Set specific boolean
+sudo setsebool -P httpd_can_sendmail 1
