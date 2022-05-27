@@ -17,5 +17,3 @@ sudo chmod -R go+r /etc/greetd/
 # Look in the configuration file `/etc/greetd/config.toml` and edit as appropriate.
 # When done, enable and start greetd
 systemctl enable --now greetd
-
-#SELINUX stuff
