@@ -9,6 +9,4 @@ cd build
 
 ../git-setup.sh
 
-sudo setenforce Permissive
-
 ../greetd-setup.sh
