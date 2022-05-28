@@ -18,6 +18,3 @@ sudo setsebool -P httpd_can_sendmail 1
 
 ##Great resource
 https://wiki.gentoo.org/wiki/SELinux/FAQ#How_do_I_enable_SELinux.3F
-
-##git pass
-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
