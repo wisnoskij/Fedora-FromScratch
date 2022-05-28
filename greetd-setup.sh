@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ########## Display Manager (greetd) ##########
 git clone --recurse-submodules https://git.sr.ht/~kennylevinsen/greetd
 cd greetd

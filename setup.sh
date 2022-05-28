@@ -4,8 +4,11 @@
 
 sudo dnf upgrade
 
-sudo dnf install git
 mkdir build
 cd build
+
+../git-setup.sh
+
+sudo setenforce Permissive
 
 ../greetd-setup.sh
