@@ -1,0 +1,11 @@
+
+module greetd 1.0;
+
+require {
+	type unconfined_service_t;
+	type unconfined_t;
+	class process transition;
+}
+
+#============= unconfined_service_t ==============
+allow unconfined_service_t unconfined_t:process transition;
