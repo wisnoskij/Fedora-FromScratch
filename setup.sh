@@ -1,12 +1,15 @@
 #!/bin/bash
 
 #minimal Networking, standard, (guest, but dont install that on metal)
+name="fedora-fromscratch"
 
-sudo dnf upgrade
+sudo dnf update
 
-mkdir build
-cd build
+if [ ! -f "$name.sh" ]; then
+	cd ~
+	sudo dnf install git
+	git clone "https://github.com/wisnoskij/$name.git"
+	cd $name
+fi
 
-../git-setup.sh
-
-../greetd-setup.sh
+"./$name.sh"
