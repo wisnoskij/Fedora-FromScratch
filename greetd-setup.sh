@@ -7,10 +7,8 @@ sudo systemctl enable greetd
 sudo systemctl set-default graphical.target
 
 ########## Greeter (tuigreet) ##########
-sudo dnf install cargo
+sudo dnf copr enable alebastr/sway-extras
+sudo dnf install greetd-tuigreet
 
-git clone https://github.com/apognu/tuigreet
-cd tuigreet
-cargo build --release
-mv target/release/tuigreet /usr/local/bin/tuigreet
+sudo sed -i 's/agreety/tuigreet/' /etc/greetd/config.toml
 
