@@ -18,10 +18,11 @@ elif [ -d $prjpath ]; then
         	git pull
 	else
 		echo "ERROR: $prjpath already exists. Remove and run again."
+		exit 1
 	fi
 else
 	git clone "https://github.com/wisnoskij/$name.git" $prjpath
 	cd $prjpath
 fi
 
-"./$name.sh"
+"./main.sh"
