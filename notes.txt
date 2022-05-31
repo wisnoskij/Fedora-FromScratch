@@ -20,3 +20,6 @@ sudo setsebool -P httpd_can_sendmail 1
 https://wiki.gentoo.org/wiki/SELinux/FAQ#How_do_I_enable_SELinux.3F
 
 /sbin/nologin
+
+Aliases:
+push, pull, commit (remove git, and allow commit-push)
