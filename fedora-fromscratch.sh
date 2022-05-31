@@ -4,7 +4,7 @@
 name="fedora-fromscratch"
 prjpath="$HOME/$name"
 function gitname {
-	$(basename -s .git `git config --get remote.origin.url`
+	basename -s .git `git config --get remote.origin.url`
 }
 
 sudo dnf update
