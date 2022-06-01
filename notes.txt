@@ -1,4 +1,4 @@
-#permissive mode
+#permissive mod
 sudo setenforce Permissive
 #Enforcing
 sudo setenforce Enforcing
