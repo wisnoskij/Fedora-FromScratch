@@ -2,17 +2,16 @@
 
 ########## Alias Setup ##########
 
-ALIASPATH="$HOME/.bashrc.d"
+ALIAS_PATH="$HOME/.bashrc.d"
+GIT_ALIAS="$ALIAS_PATH/git-alias.sh"
 
 #Fedora's bashrc uses .bashrc.d folder for any additions
-if [ ! -d $ALIASPATH ]; then
-	mkdir $ALIASPATH
+if [ ! -d $ALIAS_PATH ]; then
+	mkdir $ALIAS_PATH
 fi
 
-#create file if needed and set to xrw,xr,xr i guess
-
-cat <<TST >> greetings.txt
-line 1
-line 2
-line 3
-TST
+#Create file if needed and set to xrw,xr,xr i guess
+if [ ! -d "$GIT_ALIAS" ]; then
+else
+	echo "$GIT_ALIAS already exists. Overwrite? [y/N]:"
+fi
