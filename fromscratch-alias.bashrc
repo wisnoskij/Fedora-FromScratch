@@ -11,6 +11,6 @@ alias addall='git add *'
 
 #General aliases
 alias clls='clear; ls'
-alias update='sudo nf update'
+alias update='sudo dnf update'
 alias install='sudo dnf install'
 alias search='dnf search'

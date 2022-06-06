@@ -12,5 +12,6 @@ if [ ! -d $ALIAS_PATH ]; then
 fi
 
 chmod 711 $FS_ALIAS
-. $FS_ALIAS
 mv $FS_ALIAS "$ALIAS_PATH/$FS_ALIAS"
+
+source ~/.bashrc

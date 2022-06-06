@@ -7,4 +7,6 @@ chmod u+x fedora-fromscratch.sh
 run ./fedora-fromscratch.sh
 
 To work on:
-Xorg
+install @base-x awesome
+create .xinitrc "exec awesome"
+see if I can get sessions to work with tuigreet
