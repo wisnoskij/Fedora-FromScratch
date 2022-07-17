@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #minimal Networking, standard, (guest, but dont install that on metal)
 name="fedora-fromscratch"

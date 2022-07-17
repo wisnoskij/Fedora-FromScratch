@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ########## Display Manager (greetd) ##########
 sudo dnf install greetd
