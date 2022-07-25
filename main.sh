@@ -2,6 +2,8 @@
 
 mkdir build; cd $_
 
-../git-setup.sh
+../base-setup.sh
+
+../alias-setup.sh
 
 ../greetd-setup.sh

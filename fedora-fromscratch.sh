@@ -25,4 +25,4 @@ else
 	cd $prjpath
 fi
 
-"./main.sh"
+./main.sh
